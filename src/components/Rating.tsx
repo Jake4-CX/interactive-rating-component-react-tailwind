@@ -39,12 +39,12 @@ export function Rating() {
 
       <div className="flex justify-center space-x-4 my-6">
         {[1, 2, 3, 4, 5].map((rating) => (
-          <button onClick={() => handleRatingClicked(rating)} className="bg-[#292e38] text-white p-3 px-5 rounded-full hover:bg-[#7d8796] focus:bg-[#fb7b19] duration-150">{rating}</button>
+          <button type="button" onClick={() => handleRatingClicked(rating)} className="bg-[#292e38] text-white p-3 px-5 rounded-full hover:bg-[#7d8796] focus:bg-[#fb7b19] duration-150">{rating}</button>
         ))}
       </div>
 
 
-      <button type="button" disabled={selectedRating === undefined} className="w-full rounded-3xl py-[10px] font-semibold text-white bg-[#fb7b19] duration-300 hover:text-[#fb7b19] hover:bg-white">Submit</button>
+      <button type="submit" disabled={selectedRating === undefined} className="w-full rounded-3xl py-[10px] font-semibold text-white bg-[#fb7b19] duration-300 hover:text-[#fb7b19] hover:bg-white">Submit</button>
     </form>
   )
 }
