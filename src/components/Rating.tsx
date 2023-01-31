@@ -15,25 +15,25 @@ export function Rating() {
   }
 
   return isSubmitted ? (
-    <div className="bg-[#1e242e] p-10 rounded-3xl w-[400px] h-[360px] text-center flex flex-col items-center">
+    <div className="bg-[#1e242e] p-8 rounded-3xl w-[400px] h-[360px] text-center flex flex-col items-center">
 
       <img className="" src="/images/illustration-thank-you.svg" alt="star" />
 
-      <div className="bg-[#272e3f] rounded-2xl p-2 px-4 mt-3 mb-1">
+      <div className="bg-[#272e3f] rounded-2xl p-2 px-4 mt-8 mb-2">
         <p className="text-[#fb7b19]">You selected {selectedRating} out of 5</p>
       </div>
 
-      <h1 className="text-white text-4xl my-2">Thank you!</h1>
+      <h1 className="text-white text-4xl my-4 font-semibold">Thank you!</h1>
 
       <p className="text-[#8e949e] text-[13px]">We appreciate you taking the time to give a rating. If you ever need more
       support, don't hesitate to get in touch!</p>
 
     </div>
   ) : (
-    <form onSubmit={handleRatingSubmitted} className="bg-[#1e242e] p-10 rounded-3xl w-[400px] h-[360px] text-left">
+    <form onSubmit={handleRatingSubmitted} className="bg-[#1e242e] p-8 rounded-3xl w-[400px] h-[360px] text-left">
       
-      <img className="bg-[#272e3f] rounded-full p-3" src="/images/icon-star.svg" alt="star" />
-      <h1 className="text-white text-4xl mb-2">How did you do?</h1>
+      <img className="bg-[#272e3f] rounded-full p-3 mb-6" src="/images/icon-star.svg" alt="star" />
+      <h1 className="text-white text-2xl mb-2 font-semibold">How did we do?</h1>
       <p className="text-[#8e949e] text-[13px]">Please let us know how we did with your support request. All feedback is
       appreciated to help us improve our offering!</p>
 
